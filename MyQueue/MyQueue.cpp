@@ -27,16 +27,42 @@ int main()
     cout << "\n\nQueue after pop() : \n";
     MyQueue.Print( );
 
-    
-    MyQueue.pop( );
+    //Extension #1
+    cout << "\n\nItem (2) : " << MyQueue.GetItem(2);
 
-    cout << "\n\nQueue after pop() : \n";
+    //Exteinsion #2
+    MyQueue.Reverse( );
+    cout << "\n\nQueue after revese() : \n";
     MyQueue.Print( );
 
     
-    MyQueue.pop( );
+    //Exteinsion #3
+    MyQueue.UpdateItems(2, 600 );
+    cout << "\n\nQueue after Updating Item(2) : \n";
+    MyQueue.Print( );
 
-    cout << "\n\nQueue after pop() : \n";
+    
+    
+    //Exteinsion #4
+    MyQueue.InsertAfter(2, 800 );
+    cout << "\n\nQueue after Inserting  800 : \n";
+    MyQueue.Print( );
+    
+    
+    //Exteinsion #5
+    MyQueue.InsertAtFront(1000 );
+    cout << "\n\nQueue after Inserting  1000 : \n";
+    MyQueue.Print( );
+    
+    //Exteinsion #6
+    MyQueue.InsertAtBack(2000 );
+    cout << "\n\nQueue after Inserting  2000 : \n";
+    MyQueue.Print( );
+
+
+    //Exteinsion #7
+    MyQueue.Clear( );
+    cout << "\n\nQueue after Clear : \n";
     MyQueue.Print( );
 
 
